@@ -1,68 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
 :root {
   --background-dark: #7c3aed;
+  --primary-color: #ed3a3a;
   --black: #000;
 }
 
-html {
-  background-color: var(--background-dark);
-  color: var(--black);
-  height: 100%;
-}
 
-* {
-  font-family: "Lato", sans-serif;
-}
-
-.header {
-  text-align: center;
-  margin-top: 100px;
-}
-
-.container {
-  width: 300px;
-  margin: auto auto;
-}
-
-label,
-input {
-  display: block;
-  margin-top: 0.5rem;
+body {
+  font-family: 'Zen Kurenaido', sans-serif;
+  margin: 0px auto;
+  max-width: 85%;
   width: 100%;
 }
 
-label {
-  font-weight: 500;
-  font-size: 1.3rem;
+
+.container {
+  padding: 0rem 1rem;
 }
 
-input {
-  border-radius: 5px;
-  padding: 0.5rem;
-  border: transparent;
-  font-size: large;
-  margin: 1rem 0;
+
+.content-container {
+  width: 300px;
+  margin: auto auto;
+  text-align: center
+} 
+.navigation {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
-#calculate-number {
-  margin: 0.5rem auto;
+.navigation .nav-brand {
+  font-weight: bold;
+}
+
+.nav-brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation .nav-pills {
+  text-align: right;
+  margin: 0.6rem 1rem;
+}
+
+.navigation .link {
+  color: white;
+}
+
+.navigation .link-active {
+  font-weight: bold;
+}
+
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+.heading {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.input-label {
   display: block;
+  font-size: large;
+  font-weight: 600;
 }
 
+.input {
+  font-size: 14px;
+  outline: #fff;
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 150px;
+}
+
+
 #calculate-number {
-  background-color: var(--background-dark);
-  border: 2px solid var(--black);
-  color: var(--black);
-  padding: 0.4rem 1rem;
+  background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
   border-radius: 0.5rem;
   font-size: large;
   cursor: pointer;
-  outline: var(--black);
+  outline: #fff;
   margin: auto;
   display: block;
 }
 
 #output-container {
   display: block;
+  font-weight: bold;
   margin: auto;
   margin-top: 1rem;
   width: 100%;
@@ -74,23 +121,26 @@ input {
   border-radius: 5px;
 }
 
-/* footer */
-
-footer {
+.footer {
+  background-color: var(--primary-color);
+  padding: 2rem 1rem;
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  color: white;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
-footer p {
+.footer .link {
+  color: white;
+}
+
+.footer .footer-header {
+  font-weight: bold;
   font-size: large;
-  text-align: center;
 }
 
-.footer-list {
-  margin: 1rem;
+.footer ul {
+  padding-inline-start: 0px;
 }
 
 a,
