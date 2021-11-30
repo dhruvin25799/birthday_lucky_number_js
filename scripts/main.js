@@ -13,7 +13,6 @@ const calculateSum = (date) => {
 };
 
 const checkIsNumberLucky = (sumOfDate, numberToCheck) => {
-    console.log(sumOfDate, numberToCheck);
     if (sumOfDate % numberToCheck === 0) {
         return showMessage(`Congrats! ${numberToCheck} is a lucky number! `);
     }
